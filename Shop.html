@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Section</title>
+            <!--    link to js-->
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+
+<!--    link to css-->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/custom.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-reboot.css">
+
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="card-body">
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Bila Stress Nyama Zone</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Shop">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Cart">Cart</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--end navbar-->
+
+<h2>PLACE ALL YOUR ORDERS HERE</h2>
+<p class="font-italic text-danger">Some will be in Packs and some will be in Kilo Grams Kindly on each type select as advised.</p>
+<P class="font-italic text-danger">Scroll down, insert quantities required for each item, click NEXT and click SEND MESSAGE.
+    That eazzy! We shall pick it up from there. Asante sana!</P>
+<p class="font-weight-bold">Beef, Pork, Goat, Lamb, Chicken, Turkey, Fish</p>
+<div class="row">
+    <!--    PORK SECTION FORM-->
+    <div class="col-3">
+        <form  action="" method="post">
+            <div class="form-group">
+                    <select name="jina" id="" class="form-control">
+                        <option value class="badge-success">Pork type</option>
+                        <option value="p1">Pork Prime Shoulders Ribs (Ksh 790/Kg)</option>
+                        <option value="p2">Pork belly slices (Ksh 820/Kg)</option>
+                        <option value="p3">Pork Hand Boneless (Ksh 720/Kg)</option>
+                        <option value="p4">Pork Loin Chops (Ksh 1130/Kg)</option>
+                        <option value="p5">Pork Fillet (Ksh 735/Kg)</option>
+                        <option value="p6">Pork Belly Ribs (Ksh 820/Kg)</option>
+                        <option value="p7">Pork Leg Steaks (Ksh 790/Kg)</option>
+                        <option value="p8">Pork Shoulder Chops (Ksh 1360/Kg)</option>
+                        <option value="p9">Pork Baby Ribs (Ksh 690/Kg)</option>
+                    </select>
+                </div>
+            <div class="form-group">
+                <input class="form-control" name="wingi" type="number" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
+            </div>
+        </form>
+    </div>
+    <!--    LAMB SECTION FORM-->
+    <div class="col-3">
+         <form  action="" method="post">
+            <div class="form-group">
+                    <select name="jina" id="" class="form-control">
+                        <option value class="badge-success">Lamb type</option>
+                        <option value="l1">Lamb Casserole (Ksh 620/Kg)</option>
+                        <option value="l2">Lamb Leg Bone In Sliced (Ksh 690/Kg)</option>
+                        <option value="l3">Lamb Shoulder Chops (Ksh 785/Kg)</option>
+                        <option value="l4">Lamb Leg Bone In Whole (2.5-4kg) (Ksh 1130/Kg)</option>
+                    </select>
+                </div>
+             <div class="form-group">
+                <input class="form-control" name="wingi" type="number" placeholder="Quantity">
+            </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
+                </div>
+        </form>
+    </div>
+    <!--    GOAT SECTION FORM-->
+        <div class="col-3">
+         <form  action=""method="post">
+            <div class="form-group">
+                    <select name="jina" id="" class="form-control" >
+                        <option value class="badge-success">Goat type</option>
+                        <option value="g1">Mbuzi Chops (Ksh 650/Kg)</option>
+                        <option value="g2">Whole Mbuzi Leg-Sliced (2.5-4kg)-Price per kg (Ksh 750/Kg)</option>
+                        <option value="g3">Mbuzi Leg-Whole/Unsliced (2.5-4kg)-Price per kg (Ksh 650/Kg)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="wingi" type="number" placeholder="Quantity">
+                </div>
+                     <div>
+                         <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
+                     </div>
+        </form>
+    </div>
+    <!--    BEEF SECTION FORM-->
+        <div class="col-3">
+        <form  action=""method="post">
+            <div class="form-group">
+                    <select name="jina" id="" class="form-control">
+                        <option value class="badge-success">Beef type</option>
+                        <option value="b1">Beef Barbecue Ribs (Ksh 520/Kg)</option>
+                        <option value="b2">Gichiri (Chuck on bone) (Ksh 550/Kg)</option>
+                        <option value="b3">Boneless Succulent Cubes (Ksh 670/Kg)</option>
+                        <option value="b4">Striploin (Ksh 990/Kg)</option>
+                        <option value="b5">Beef Liver (Ksh 535/Kg)</option>
+                        <option value="b6">Soup Bones (Comes in 5-6kg) (Ksh 80/Kg)</option>
+                        <option value="b7">Minced Beef High Grade- 1kg pack (Ksh 595/Pack)</option>
+                        <option value="b8">Osubuko (Shin on bone) (Ksh 480/Kg)</option>
+                        <option value="b9">T- Bone (Ksh 1100/Kg)</option>
+                        <option value="b10">Rump Steak (Ksh 850/Kg)</option>
+                        <option value="b11">Beef Fillet (Ksh 1250/Kg)</option>
+                        <option value="b12">Ox- Tail (Ksh 535/Pack)</option>
+                        <option value="b13">Meaty Soup Bones (Comes in 2kg pack) (Ksh 320/Kg)</option>
+                        <option value="b14">Minced Beef High Grade- 500g pack(Ksh 405/Pack)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="wingi" type="number" placeholder="Quantity">
+                </div>
+                     <div>
+                         <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
+                     </div>
+        </form>
+    </div>
+</div>
+<hr>
+<div class="row">
+
+        <!--    CHICKEN SECTION FORM-->
+        <div class="col-3">
+        <form  action="" method="post">
+            <div class="form-group">
+                    <select name="jina" id="" class="form-control">
+                        <option value class="badge-success">Chicken type</option>
+                        <option value="c1">Full Chicken (from 1.4kg) -State number of chicken (Ksh 410/Kg)</option>
+                        <option value="c2">Chicken Drumsticks (Comes in 1 kg pack) (Ksh 690/Kg)</option>
+                        <option value="c3">Chicken Wings (comes in 1kg pack) (Ksh 690/Kg)</option>
+                        <option value="c4">Chicken Breast Fillet (comes in 1kg pack) (Ksh 800/Kg)</option>
+                        <option value="c5">Chicken Whole Leg Quarters (comes in 1 kg pack) (Ksh 700/Kg)</option>
+                        <option value="c6">Chicken Thighs (comes in 1 kg pack) (Ksh 690/Kg)</option>
+                        <option value="c7">Chicken Gizzards (comes in 1kg pack) (Ksh 525/Pack)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="wingi" type="number" placeholder="Quantity">
+                </div>
+                     <div>
+                         <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
+                     </div>
+        </form>
+    </div>
+            <!--    FISH SECTION FORM-->
+        <div class="col-3">
+        <form  action=""method="post">
+            <div class="form-group">
+                    <select name="jina" id="" class="form-control">
+                        <option value class="badge-success">Fish type</option>
+                        <option value="f1">Tilapia Fillet 5kg Box (Has small packs inside) (Ksh 4500/Box)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="wingi" type="number" placeholder="Quantity">
+                </div>
+                     <div>
+                         <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
+                     </div>
+        </form>
+    </div>
+                <!--    TURKEY SECTION FORM-->
+        <div class="col-3">
+        <form  action=""method="post">
+            <div class="form-group">
+                    <select name="jina" id="" class="form-control">
+                        <option value class="badge-success">Turkey type</option>
+                        <option value="t1">Whole Turkey (2-3kg) price per kg(Ksh 785/Kg)</option>
+                        <option value="t2">Turkey Fillet per kg (Ksh 1150/Kg)</option>
+                        <option value="t3">Turkey Legs per kg (Ksh 600/Kg)</option>
+                        <option value="t4">Turkey Drumstick per kg (Ksh 600/Kg)</option>
+                        <option value="t5">Turkey Wings per kg (Ksh 600/Kg)</option>
+                        <option value="t6">Turkey Breast per kg (Ksh 1150/Kg)</option>
+                        <option value="t7">Turkey Pieces per kg (Ksh 700/Kg)</option>
+                        <option value="t8">Turkey Thigh per kg(Ksh 600/Kg)</option>
+                        <option value="t9">Turkey Mince per kg (Ksh 700/Kg)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="wingi" type="number" placeholder="Quantity">
+                </div>
+                     <div>
+                         <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
+                     </div>
+        </form>
+    </div>
+
+</div>
+
+</body>
+{% with messages =get_flashed_messages() %}
+        {% for message in messages %}
+         <p>{{ message }}</p>
+        {% endfor %}
+    {% endwith %}
+</html>

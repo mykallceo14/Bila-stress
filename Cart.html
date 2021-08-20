@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+        <!--    link to js-->
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+
+<!--    link to css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="card-body">
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Bila Stress Nyama Zone</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Shop">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Cart">Cart</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+<!--end navbar-->
+<table class="table1 table table-bordered table-hover">
+    <tr>
+        <th>Product Name</th>
+        <th>Product Quantity</th>
+        <th>Total cost</th>
+        <th>Delete</th>
+    </tr>
+    {% for product in my_product %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td><div class="row">
+                <div class="col-4 justify-content-center">
+                    <a href="minus_one/{{ product.id }}" class="text-danger">Minus</a>
+                </div>
+                <div class="col-4 justify-content-center">
+                    {{ product.quantity }}
+                </div>
+                <div class="col-4 justify-content-center">
+                    <a href="add_one/{{ product.id }}" class="text-info">Add</a>
+                </div>
+            </div></td>
+            <td>{{ product.total_cost }}</td>
+            <<td><a href="/delete/{{ product.id }}"class="btn btn-danger">Delete</a></td>
+        </tr>
+    {% endfor %}
+        <tr style="background-color: #005bff; color: #f5ffef">
+            <td></td>
+            <td>Total</td>
+            <td>{{ total_amount }}</td>
+        </tr>
+</table>
+<button>Submit Order</button>
+
+</body>
+{% with messages =get_flashed_messages() %}
+        {% for message in messages %}
+         <p>{{ message }}</p>
+        {% endfor %}
+    {% endwith %}
+</html>
